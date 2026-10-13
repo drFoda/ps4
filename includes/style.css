@@ -540,4 +540,82 @@ input[type="checkbox"]:checked {
     height: 200px;
     font-size: 12px;
   }
+   /* ===== Fady GoldHEN UI refresh ===== */
+
+body {
+  background:
+    radial-gradient(ellipse at 50% 0%, #172849 0%, transparent 55%),
+    #080d18;
+  color: #e8edf7;
+}
+
+.owner-name {
+  color: #f4c95d;
+  text-shadow: 0 0 18px rgba(244, 201, 93, 0.15);
+}
+
+.sub-brand {
+  color: #aebbd0;
+}
+
+.card {
+  border-color: rgba(108, 137, 183, 0.25);
+  background: rgba(15, 23, 40, 0.96);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.3);
+}
+
+.jb-btn {
+  background: linear-gradient(135deg, #ff453a, #b91028);
+  border: 1px solid rgba(255, 125, 110, 0.6);
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(220, 25, 45, 0.25);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.jb-btn:not(:disabled):hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
+.jb-btn:disabled {
+  cursor: default;
+}
+
+.jb-btn.ok {
+  background: linear-gradient(135deg, #159b68, #087448);
+  border-color: #3dd99a;
+}
+
+.jb-btn.err {
+  background: linear-gradient(135deg, #8e2330, #591421);
+  border-color: #ff5967;
+}
+
+.phase {
+  border-color: #33445f;
+  background: #111c30;
+}
+
+.phase.active {
+  border-color: #f4c95d;
+}
+
+.phase.done {
+  border-color: #2ecc91;
+}
+
+.phase.fail {
+  border-color: #ff5967;
+}
+
+#console {
+  background: #070b13;
+  border-color: #293851;
+  color: #9fe6bd;
+}
+
+.pill {
+  border-color: #33445f;
+  background: #111c30;
+}
 }
