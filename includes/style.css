@@ -349,7 +349,7 @@ input[type="checkbox"]:checked::after {
   height: 230px;
   overflow-y: auto;
   background: #05070c;
-  color: #3ddc84;
+  color: #dcc43d;
   font-family: "Courier New", Courier, monospace;
   font-size: 12.5px;
   line-height: 1.45;
