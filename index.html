@@ -9,7 +9,7 @@
     // ============================================================
     // Bootstrap: build version + stale AppCache guard
     // ============================================================
-    window.HOST_VERSION = "2026.10.12-fady1";
+    window.HOST_VERSION = "2026.10.14-fady2";
 
     (function () {
       var key = "hostVersion";
@@ -44,7 +44,7 @@
         <span class="shape sq">□</span><span class="shape tr">△</span><span class="shape cr">○</span><span class="shape xs">✕</span>
       </div>
       <h1 class="owner-name">Dr. Fady Bassem</h1>
-      <div class="sub-brand" dir="rtl">هذه الصفحة مخصصة فقط للدكتور فادي باسم</div>
+      <div class="sub-brand">CSSFontFace Exploit · PS4 6.00 – 11.02</div>
       <div class="pill-row" id="pill-row">
         <span class="pill" id="chain-pill">Chain: —</span>
         <span class="pill" id="attempt-pill">Attempt: 1/3</span>
@@ -57,6 +57,12 @@
         <span class="btn-main">▶ Activate GoldHEN</span>
         <span class="btn-sub">اضغط للتفعيل بضغطة واحدة</span>
       </button>
+
+      <button id="ps4debug-btn" class="debug-btn" type="button">
+        <span class="debug-btn-main">PS4 DEBUG</span>
+        <span class="debug-btn-sub">تشغيل مستقل بعد تفعيل GoldHEN</span>
+      </button>
+      <div id="ps4debug-status" class="debug-status" role="status" aria-live="polite">PS4Debug: جاهز بعد تفعيل GoldHEN</div>
 
       <div class="phase-row" id="phase-row">
         <span class="phase" id="phase-webkit">WebKit</span>
@@ -96,6 +102,7 @@
   </div>
 
   <script src="src/main.js"></script>
+  <script src="src/ps4debug.js"></script>
   <script src="includes/script.js"></script>
 </body>
 </html>

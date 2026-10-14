@@ -373,46 +373,20 @@ footer .ver {
   color: #7f8aa0;
 }
 
-/* ===== Neon GoldHEN reference redesign ===== */
-body {
-  min-height:100%; padding:28px 18px 34px;
-  background-color:#020817;
-  background-image: radial-gradient(ellipse at 50% 0%,rgba(0,95,220,.22),transparent 42%),
-    radial-gradient(ellipse at 100% 72%,rgba(255,176,0,.10),transparent 28%),
-    linear-gradient(135deg,#020817 0%,#06132c 52%,#010511 100%);
-  color:#dceaff; font-size:17px;
+
+/* Independent PS4Debug button — intentionally smaller than GoldHEN */
+.debug-btn {
+  display: block; width: min(78%, 300px); margin: 12px auto 5px; padding: 10px 14px;
+  border: 1px solid #d8b84a; border-radius: 10px; cursor: pointer;
+  background: linear-gradient(180deg, #29364b 0%, #121a29 100%); color: #f4d56c;
+  box-shadow: 0 4px 14px rgba(0,0,0,.22); font: inherit; text-align: center;
 }
-body:before, body:after {content:"";position:fixed;pointer-events:none;z-index:-1;width:42vw;height:18vw;border:2px solid rgba(0,105,255,.8);border-radius:50%;transform:rotate(-28deg);filter:drop-shadow(0 0 10px #006dff);}
-body:before {left:-15vw;top:-7vw;} body:after {right:-18vw;bottom:-7vw;border-color:rgba(255,180,20,.65);filter:drop-shadow(0 0 10px #ffae00);}
-.container {max-width:1160px;}
-.brand {font-size:27px;letter-spacing:17px;margin:0 0 6px;color:#08cfff;text-shadow:0 0 12px currentColor;}
-.shape.sq {color:#ff3f9b}.shape.tr{color:#00f4df}.shape.cr{color:#ff583f}.shape.xs{color:#159dff}
-h1.owner-name {font-size:clamp(36px,5vw,68px);line-height:1.1;letter-spacing:1px;margin:8px 0 4px;color:#ffdb69;text-shadow:0 2px 0 #8c5b00,0 0 24px rgba(255,188,40,.32);}
-.sub-brand {text-transform:none;letter-spacing:0;font-size:clamp(15px,2vw,23px);font-weight:600;color:#a7ceff;margin:6px 0 18px;}
-.pill-row {margin:14px 0 8px;}
-.pill {min-width:238px;padding:13px 20px;margin:0 14px 8px;border:1px solid #0878ff;background:rgba(2,15,38,.9);color:#a8d2ff;font-size:21px;border-radius:30px;box-shadow:inset 0 0 14px rgba(0,91,255,.08);}
-.card {padding:40px 34px 36px;border:1px solid #0967d7;border-radius:17px;background:linear-gradient(145deg,rgba(3,13,31,.94),rgba(1,8,23,.96));box-shadow:0 0 0 1px rgba(0,60,150,.14),0 18px 55px rgba(0,0,0,.52);}
-.jb-btn {max-width:830px;min-height:140px;margin:0 auto 28px;padding:18px 28px;border:2px solid #ff6a20;border-radius:34px;background:linear-gradient(180deg,#ff271e 0%,#c50000 54%,#8c0000 100%);color:#fff;box-shadow:0 0 15px #ff2119,0 0 42px rgba(255,0,0,.55),inset 0 2px 10px rgba(255,255,255,.25);text-shadow:0 2px 4px rgba(80,0,0,.6);}
-.jb-btn .btn-main {font-size:clamp(27px,3.4vw,48px);line-height:1.25;}
-.jb-btn .btn-sub {font-size:20px;margin-top:4px;opacity:1;}
-.jb-btn:hover:not(:disabled) {background:linear-gradient(180deg,#ff4439,#db0000);box-shadow:0 0 22px #ff3025,0 0 55px rgba(255,0,0,.65);}
-.jb-btn:disabled,.jb-btn:disabled:hover {background:#151d2e;color:#5d6b83;border-color:#263957;box-shadow:none;}
-.phase-row {max-width:900px;margin:0 auto 22px;display:flex;align-items:center;justify-content:center;gap:16px;}
-.phase {flex:1;min-width:0;margin:0;padding:14px 12px;border:1px solid #174d9c;border-radius:30px;background:rgba(4,17,43,.88);color:#b4d8ff;font-size:21px;}
-.phase + .phase:before {content:"—";color:#1384ff;position:relative;left:-28px;}
-.status {max-width:none;margin:0 6px 26px;padding:14px 20px;border:2px solid #ff1f2b;border-radius:22px;background:rgba(20,9,25,.62);color:#ff4949;font-size:21px;text-align:left;}
-.status:before {content:"●";margin-right:14px;color:#ff2020;text-shadow:0 0 12px red;}
-.status.running {border-color:#087cff;color:#9cc9ff}.status.ok{border-color:#ffb51c;color:#ffdc72}.status.err{border-color:#ff2938;color:#ff777e}
-.opts {max-width:none;display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;gap:12px;margin:0 auto 24px;font-size:21px;color:#b9d8ff;}
-.opt {display:flex;align-items:center;gap:10px;margin:0 4px 4px;}
-.opt input {margin:0 4px 0 0;}
-input[type="checkbox"] {width:32px;height:32px;border:2px solid #ba1717;border-radius:6px;background:#101a30;}
-input[type="checkbox"]:checked {background:#e91414;border-color:#ff3434;}
-input[type="checkbox"]:checked::after {top:0;left:5px;font-size:23px;}
-input[type="radio"] {width:32px;height:32px;border:3px solid #31518d;background:#050d20;}
-input[type="radio"]:checked {background:#fff;border:5px solid #ff2537;box-shadow:inset 0 0 0 4px #fff;}
-.opt-sep {height:38px;background:#1266c6;margin:0 12px;}
-#console {max-width:none;height:148px;padding:20px;border:1px solid #0869d5;border-radius:13px;background:rgba(0,5,15,.95);color:#00ffbf;font-size:19px;line-height:1.5;box-shadow:inset 0 0 18px rgba(0,60,140,.12);}
-footer {margin-top:20px;color:#729bd7;font-size:18px;}
-footer .ver {display:inline-block;padding:7px 18px;border:1px solid #ffb11b;border-radius:25px;color:#ffda64;box-shadow:0 0 12px rgba(255,174,0,.12);}
-@media(max-width:700px){body{padding:18px 10px}.card{padding:24px 14px}.pill{min-width:0;font-size:15px;padding:10px 14px;margin:0 3px 8px}.phase-row{gap:7px}.phase{font-size:14px;padding:11px 5px}.phase + .phase:before{left:-12px}.jb-btn{min-height:112px;border-radius:24px;padding:16px 10px}.jb-btn .btn-sub{font-size:15px}.status{font-size:15px;padding:12px}.opts{justify-content:flex-start;font-size:15px;gap:10px}.opt-sep{display:none}input[type="checkbox"],input[type="radio"]{width:24px;height:24px}input[type="checkbox"]:checked::after{font-size:18px;left:3px}#console{height:140px;font-size:14px;padding:13px}footer{font-size:13px}}
+.debug-btn-main { display:block; font-weight:700; font-size:14px; letter-spacing:1px; }
+.debug-btn-sub { display:block; margin-top:3px; color:#aebbd0; font-size:10px; }
+.debug-btn:hover:not(:disabled) { background: linear-gradient(180deg, #354761 0%, #1a2638 100%); }
+.debug-btn:focus { outline:2px solid #f4d56c; outline-offset:3px; }
+.debug-btn:disabled { opacity:.55; cursor:wait; }
+.debug-status { min-height:16px; margin:4px auto 12px; color:#91a0b7; font-size:11px; text-align:center; }
+.debug-status.running { color:#f4d56c; }
+.debug-status.ok { color:#7de0a2; }
+.debug-status.err { color:#ff8585; }

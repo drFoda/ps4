@@ -1,11 +1,12 @@
 CACHE MANIFEST
-# HOST_VERSION: 2026.10.12-fady1
-# Updated: 2026-10-12 (Fady rebrand; exploit logic and payload files preserved)
+# HOST_VERSION: 2026.10.14-fady2
+# Updated: 2026-10-14 (added independent PS4Debug button; GoldHEN flow unchanged)
 # Bump this comment to force the PS4 browser to refresh its offline cache
 
 CACHE:
 index.html
 includes/script.js
+src/ps4debug.js
 includes/style.css
 src/payload.bin
 src/lapse.js
